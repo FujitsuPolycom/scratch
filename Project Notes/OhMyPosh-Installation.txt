@@ -1,0 +1,30 @@
+- Install scoop for windows
+	https://scoop.sh/
+	https://github.com/ScoopInstaller/Scoop/wiki/Quick-Start
+	
+Check PS version: $psversiontable.psversion.major
+5
+
+# install scoop
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+#must be run as non-admin
+#Installs to C:\Users\Code\scoop\
+
+#Open powershell profile in vscode
+code $profile
+
+#Profile:
+
+oh-my-posh.exe init pwsh | Invoke-Expression
+
+# need fonts, nerd fonts.com
+# Caskaydia Cove Nerd Font
+# download, unzip, install
+# Settings -> Defaults (or per-shell) -> Appearance -> Font Face
+
+	# Download theme from oh my posh website, 
+	
+# modify powershell startup
+oh-my-posh.exe init pwsh --config "C:\Users\Code\Documents\GitHub\oh-my-posh\Themes\cloud-native-azure.omp.json" | Invoke-Expression 
+
+# Stopped here. 6-4-2022. Working in Powershell, needs to be added to CMD, Ubuntu, VSCode
