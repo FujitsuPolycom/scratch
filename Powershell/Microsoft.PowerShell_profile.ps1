@@ -1,0 +1,1 @@
+oh-my-posh.exe init pwsh --config "C:\Users\Code\Documents\GitHub\oh-my-posh\Themes\cloud-native-azure.omp.json" | Invoke-Expression 
